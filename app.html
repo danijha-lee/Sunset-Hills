@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Fizz Buzz | The App</title>
+    <title>Sunset Hills | The App</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,11 +23,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="d-flex flex-column h-100">
+<body style="background-color: background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;" class="d-flex flex-column h-100">
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Fizz Buzz</a>
+            <a class="navbar-brand" href="index.html">Sunset Hills</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -64,40 +67,60 @@
                 <div class="col">
                     <div class="row">
                         <div class="col">
-                            <h1 style="margin-top: 100px;">Fizz Buzz: A Coding Project</h1>
-                            <p>
-                                When it counts you Fizz Buzz. A javascript coding exercise using loops. Write a program
-                                that
-                                prints the numbers from 1 to 100 and for multiples of '3' display 'Fizz' instead of the
-                                number and for the multiples
-                                of '5' display 'Buzz'. If a multiple of both display 'FizzBuzz'
-                            </p>
+                            <h1 style="margin-top: 100px;">Sunset Hills: A Coding Project</h1>
+                           <hr>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <h1>Instructions</h1>
                             <p>
-                                Enter a fizz and a buzz value. Press the button and the values will appear.
+                               An array of buildings is facing the sun. The heights of each building 
+                               from West to East is given in an integer array. Which buildings
+                               will be able to see the sunset ?
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col col-lg-8">
                     <div>
-                        <h5 style="margin-top: 100px;">Enter Values</h5>
+                        <h5 style="margin-top: 100px; text-align: center;">Building Heights</h5>
+                          <P style="text-align: center;">
+                              Enter a Height for each building below
+                          </P>
                         <form class="row gy-2 gx-3">
                             <div class="col">
-                            <input type="number" class="form-control" id="fizzValue" aria-label="Fizz Value">
+                             <label for="building1">Building 1</label>   
+                            <input type="number" class="form-control" id="heightOne" aria-label="Height Value">
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" id="buzzValue" placeholder="" aria-label="Buzz Value">
+                             <label for="building2">Building 2</label>
+                            <input type="number" class="form-control" id="heightTwo" placeholder=""
+                                aria-label="Height Value">
+                        </div>
+                        <div class="col">
+                             <label for="building3">Building 3</label>
+                            <input type="number" class="form-control" id="heightThree" aria-label="Height Value">
+                        </div>
+                        <div class="col">
+                             <label for="building4">Building 4</label>
+                            <input type="number" class="form-control" id="heightFour" placeholder=""
+                                aria-label="Height Value">
+                        </div>
+                        <div class="col">
+                             <label for="building5">Building 5</label>
+                            <input type="number" class="form-control" id="heightFive" aria-label="Height Value">
+                        </div>
+                        <div class="col">
+                             <label for="building6">Building 6</label>
+                            <input type="number" class="form-control" id="heightSix" placeholder=""
+                                aria-label="Height Value">
                         </div>
                         <div class="col-12 d-flex justify-content-end">
-                        <button id="btnSubmit" type="button" class="btn btn-dark-lg" style="background-color:rgb(219, 146, 186);">Click Me</button>
+                        <button id="btnSubmit" type="button" class="btn btn-dark-lg" style="background-color:rgb(192, 120, 93);">Get Results</button>
                     </div>
                         </form>
-                    <h2 class="mt-5 border-bottom border-2 ">Results</h2>
+                    <h2 class="mt-5 border-bottom border-2 " style="text-align: center;">Results</h2>
                         <div class="table-responsive">
                             <table class="table table-striped table-sm"> 
                                 <tbody id="results">

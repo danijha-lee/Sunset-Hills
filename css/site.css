@@ -1,6 +1,6 @@
 main>.container {
-
-    main>.container,
+    padding: 60px 15px 0;
+}
     main>.container-fluid {
         padding: 60px 15px 0;
     }
@@ -8,5 +8,6 @@ main>.container {
     .even {
         font-weight: bold;
     }
+
 
     
